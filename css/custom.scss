@@ -184,7 +184,8 @@ section{padding: 100px 0; width: 100%; position: relative; overflow: hidden;
                     > .drop_link::after{position: absolute; right: 0; top: 50%; transform: translateY(-50%); content: url(../images/arrow-down.svg);  height: 100%; display: flex; align-items: center; width: 14px; }
                     &.open .drop_link::after{content: url(../images/arrow-up.svg);}
                 }
-                i{margin-right: 5px; color: $color_green; min-width: 20px;}
+                i{margin-right: 5px; color: $color_green; min-width: 20px; font-size: 22px;}
+                
                 > a,.drop_link{padding: 9px 0; padding-right: 20px; width: 100%; color: inherit; position: relative;
                     &:hover{color: $color_green; cursor: pointer;}
                 }

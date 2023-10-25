@@ -417,6 +417,7 @@ section {
   margin-right: 5px;
   color: #1E532E;
   min-width: 20px;
+  font-size: 22px;
 }
 .dashboard_inner_content .left_menu .menu-list > li > a, .dashboard_inner_content .left_menu .menu-list > li .drop_link {
   padding: 9px 0;
