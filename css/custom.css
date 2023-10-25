@@ -147,6 +147,41 @@ section {
   border: 0;
 }
 
+.btn-toggle-switch {
+  padding: 0;
+  position: relative;
+  border: none;
+  height: 1.5rem;
+  width: 3rem;
+  border-radius: 1.5rem;
+  color: #6b7381;
+  background: #C8C8C8;
+}
+.btn-toggle-switch:focus, .btn-toggle-switch.focus, .btn-toggle-switch:focus.active, .btn-toggle-switch.focus.active {
+  outline: none;
+  box-shadow: none;
+}
+.btn-toggle-switch > .handle {
+  position: absolute;
+  top: 0.1875rem;
+  left: 0.1875rem;
+  width: 1.125rem;
+  height: 1.125rem;
+  border-radius: 1.125rem;
+  background: #fff;
+  transition: left 0.25s;
+}
+.btn-toggle-switch.active {
+  transition: background-color 0.25s;
+}
+.btn-toggle-switch.active > .handle {
+  left: 1.6875rem;
+  transition: left 0.25s;
+}
+.btn-toggle-switch.active {
+  background-color: #1C9559;
+}
+
 .heading_block {
   width: 100%;
   display: block;
@@ -881,4 +916,9 @@ section {
     padding-left: 0;
     padding-bottom: 0;
   }
+}
+
+.dashboard_form label {
+  font-size: 14px;
+  font-weight: 400;
 }/*# sourceMappingURL=custom.css.map */

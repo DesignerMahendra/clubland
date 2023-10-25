@@ -90,6 +90,17 @@ section{padding: 100px 0; width: 100%; position: relative; overflow: hidden;
         }
     } 
 }
+.btn-toggle-switch {
+     padding: 0; position: relative; border: none; height: 1.5rem; width: 3rem; border-radius: 1.5rem; color: #6b7381; background: #C8C8C8;
+    &:focus, 
+    &.focus,
+    &:focus.active,
+    &.focus.active{ outline: none; box-shadow: none; }
+    > .handle { position: absolute; top: 0.1875rem; left: 0.1875rem; width: 1.125rem; height: 1.125rem; border-radius: 1.125rem; background: #fff; transition: left 0.25s; } 
+    &.active { transition: background-color 0.25s; }
+    &.active > .handle { left: 1.6875rem; transition: left 0.25s; }
+    &.active { background-color: $color_green_light; }
+}
 
 
 .heading_block{width: 100%; display: block; margin-bottom: 40px;
@@ -390,6 +401,10 @@ section{padding: 100px 0; width: 100%; position: relative; overflow: hidden;
     }
 }
 
+.dashboard_form{
+    label{font-size: 14px; font-weight: 400;}
+}
+
   
-
-
+  
+  
