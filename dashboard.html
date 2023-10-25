@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Clubland</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="" />
+  <meta name="MobileOptimized" content="320" />
+
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/css/datepicker.css" />
+
+  <link rel="stylesheet" type="text/css" href="css/fullcalendar.css" />
+  <link rel="stylesheet" type="text/css" href="css/icons.css" />
+  <link rel="stylesheet" type="text/css" href="css/animate.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" /> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+  <link rel="stylesheet" type="text/css" href="css/flaticon.css" />
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+  <link rel="stylesheet" type="text/css" href="css/owl.theme.default.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+  <link rel="stylesheet" type="text/css" href="css/nice-select.css" />
+  <link rel="stylesheet" type="text/css" href="css/reset.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+
+
+
+
+
+</head>
+
+<body>
+  <div class="jb_preloader">
+    <div class="spinner_wrap">
+      <div class="spinner"></div>
+    </div>
+  </div>
+  <div class="cursor"></div>
+  <a href="javascript:" id="return-to-top"><i class="fas fa-angle-double-up"></i></a>
+  <nav class="cd-dropdown  d-block d-sm-block d-md-block d-lg-none d-xl-none">
+    <h2><a href="index.html"> <span><img src="images/logo.png" alt="img"></span></a></h2>
+    <a href="#0" class="cd-close">Close</a>
+    <ul class="cd-dropdown-content">
+      <li><a href="index.html">Home</a> </li>
+      <li><a href="#">About</a> </li>
+      <li><a href="">Pricing</a></li>
+      <li><a href="">How it works</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
+  <div class="cp_navi_main_wrapper jb_cover">
+    <div class="container-fluid">
+      <div class="cp_logo_wrapper"> <a href="index.html"> <img src="images/logo.png" alt="logo"> </a> </div>
+      <header class="mobail_menu d-block d-sm-block d-md-block d-lg-none d-xl-none">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="cd-dropdown-wrapper"> <a class="house_toggle" href="#0">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                    id="Capa_1" x="0px" y="0px" viewBox="0 0 31.177 31.177"
+                    style="enable-background:new 0 0 31.177 31.177;" xml:space="preserve" width="25px" height="25px">
+                    <g>
+                      <g>
+                        <path class="menubar"
+                          d="M30.23,1.775H0.946c-0.489,0-0.887-0.398-0.887-0.888S0.457,0,0.946,0H30.23    c0.49,0,0.888,0.398,0.888,0.888S30.72,1.775,30.23,1.775z"
+                          fill="#004165" />
+                      </g>
+                      <g>
+                        <path class="menubar"
+                          d="M30.23,9.126H12.069c-0.49,0-0.888-0.398-0.888-0.888c0-0.49,0.398-0.888,0.888-0.888H30.23    c0.49,0,0.888,0.397,0.888,0.888C31.118,8.729,30.72,9.126,30.23,9.126z"
+                          fill="#004165" />
+                      </g>
+                      <g>
+                        <path class="menubar"
+                          d="M30.23,16.477H0.946c-0.489,0-0.887-0.398-0.887-0.888c0-0.49,0.398-0.888,0.887-0.888H30.23    c0.49,0,0.888,0.397,0.888,0.888C31.118,16.079,30.72,16.477,30.23,16.477z"
+                          fill="#004165" />
+                      </g>
+                      <g>
+                        <path class="menubar"
+                          d="M30.23,23.826H12.069c-0.49,0-0.888-0.396-0.888-0.887c0-0.49,0.398-0.888,0.888-0.888H30.23    c0.49,0,0.888,0.397,0.888,0.888C31.118,23.43,30.72,23.826,30.23,23.826z"
+                          fill="#004165" />
+                      </g>
+                      <g>
+                        <path class="menubar"
+                          d="M30.23,31.177H0.946c-0.489,0-0.887-0.396-0.887-0.887c0-0.49,0.398-0.888,0.887-0.888H30.23    c0.49,0,0.888,0.398,0.888,0.888C31.118,30.78,30.72,31.177,30.23,31.177z"
+                          fill="#004165" />
+                      </g>
+                    </g>
+                  </svg>
+                </a> </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="jb_navigation_wrapper">
+        <div class="mainmenu d-xl-block d-lg-block d-md-none d-sm-none d-none">
+          <ul class="main_nav_ul">
+            <li><a href="#" class="gc_main_navigation active_class">Home</a></li>
+            <li><a href="#" class="gc_main_navigation">About</a></li>
+            <li> <a href="#" class="gc_main_navigation"> Pricing</a></li>
+            <li><a href="#" class="gc_main_navigation">How it works</a></li>
+            <li><a href="#" class="notification_nav">
+              <span class="notification_count">2</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="23.217" height="27.063" viewBox="0 0 23.217 27.063">
+              <path id="notifcations" d="M86.564,50.685l-.3-.358c-1.329-1.607-2.133-2.578-2.133-7.128a9.229,9.229,0,0,0-1.675-5.739,7.882,7.882,0,0,0-3.386-2.484.181.181,0,0,1-.05-.04,3.653,3.653,0,0,0-7.163,0,.189.189,0,0,1-.049.039c-3.406,1.4-5.061,4.092-5.061,8.224,0,4.552-.8,5.523-2.133,7.128-.1.117-.2.235-.3.358a2.124,2.124,0,0,0-.281,2.273,2.258,2.258,0,0,0,2.074,1.273h18.66a2.254,2.254,0,0,0,2.065-1.269A2.125,2.125,0,0,0,86.564,50.685Zm-11.12,8.378A4.836,4.836,0,0,0,79.7,56.518a.242.242,0,0,0-.214-.355H71.4a.242.242,0,0,0-.214.355A4.836,4.836,0,0,0,75.444,59.063Z" transform="translate(-63.835 -32)" fill="#d97333"/>
+            </svg>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+      <div class=" user_profile">
+        <spna href="#" class="d-flex link-body-emphasis text-decoration-none"  >
+          <img src="./images/user-img.png" alt="mdo" width="50" height="50" class="rounded-circle">
+          <div class="user-content text-start">
+          <span>Anthony Smith</span>
+          <p class="mb-0">Company Name</p>
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Title Section Start -->
+  <div class="page_title_section">
+    <div class="page_header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 col-md-8 col-12 col-sm-7">
+            <div class="left_menu_icon" id="left_menu_icon"></div>
+            <h1>Dashboard</h1>
+          </div>
+          <div class="col-lg-3 col-md-4 col-12 col-sm-5">
+            <div class="sub_title_section">
+              <ul class="sub_title">
+                <li> <a href="#"> Home </a>&nbsp; / &nbsp; </li>
+                <li>Dashboard</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Title Section End -->
+  <!-- Dashboard Inner Content Section Start -->
+  <section class="dashboard_inner_content">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="left_menu" id="left_menu">
+            <div class="close_menu" id="close-icon"><i class="uil uil-times"></i></div>
+            <div class="feature_box text-center border-bottom-0">
+              <div class="media_div mb-3">
+                <img src="./images/user-profile-default.jpg" alt="profile-img">
+              </div>
+              <h3>Club Name</h3>
+              <div class="progress_div">
+                <span>profile</span>
+                <span>70%</span>
+                <span class="progress" style="width: 70%;">&nbsp;</span>
+              </div>
+            </div>
+            <div class="feature_box pt-0">
+              <ul class="menu-list" id="drop_menu">
+                <li><a class="link" href="#"><i class="fas fa-tachometer-alt"></i></i> Dashboard</a></li>
+                <li><a class="link" href="#"><i class="fas fa-edit"></i> Profile</a></li>
+                <li class="dropdown">
+                  <span class="link drop_link"><i class="fas fa-suitcase"></i> Memberships</span>
+                  <ul class="submenu dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Membership Plans</a></li>
+                    <li><a class="dropdown-item" href="#">Members</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <span class="link drop_link"><i class="fas fa-tag"></i> Events</span>
+                  <ul class="submenu dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Add New Event</a></li>
+                    <li><a class="dropdown-item" href="#">All Events</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+
+                  <span class="link drop_link"><i class="fas fa-envelope"></i> Club/Shop</span>
+                  <ul class="submenu dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Add New Club</a></li>
+                    <li><a class="dropdown-item" href="#">All Club</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <span class="link drop_link"><i class="fas fa-city"></i> Facility</span>
+                  <ul class="submenu dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">All Facility</a></li>
+                  </ul>
+                </li>
+                <!-- <li class="dropdown">
+                <span class="link drop_link" ><i class="fas fa-chart-bar"></i> Finance</span>
+                <ul class="submenu dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                </ul>
+              </li> -->
+                <li class="dropdown">
+                  <span class="link drop_link"><i class="fas fa-globe"></i> Web Pages</span>
+                  <ul class="submenu dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Home</a></li>
+                    <li><a class="dropdown-item" href="#">About us</a></li>
+                    <li><a class="dropdown-item" href="#">Pricing</a></li>
+                  </ul>
+                </li>
+                <li><a class="link" href="#"><i class="fas fa-building"></i> Company Preview</a></li>
+              </ul>
+            </div>
+            <div class="feature_box border-bottom-0">
+              <ul class="menu-list">
+                <li><a href="#"><i class="fas fa-key"></i> Change Password</a></li>
+                <li><a href="#"><i class="fas fa-power-off"></i> Log out</a></li>
+                <li><a href="#"><i class="fas fa-trash-alt"></i> Delete Account</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-9">
+          <div class="right_menu">
+            <div class="title_div d-flex align-items-center justify-content-between mb-20">
+              <h2>Hello Anthony</h2>
+              <div class="comments_form select_filter mb-0">
+                <select class="form-control form-select" aria-label="Default select example">
+                  <option selected>This Week</option>
+                  <option value="1">This Month</option>
+                  <option value="2">This Year</option>
+                </select>
+              </div>
+            </div>
+            <div class="dashboard_orverview">
+              <div class="row">
+                <div class="col-6">
+                  <div class="feature_box sky_blue">
+                    <div class="feature_icon">
+                      <img src="./images/icon/membership_icon.svg">
+                    </div>
+                    <div class="feature_content">
+                      <span>26</span>
+                      <h3>New Memberships</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="feature_box green">
+                    <div class="feature_icon">
+                      <img src="./images/icon/product_icon.svg">
+                    </div>
+                    <div class="feature_content">
+                      <span>126</span>
+                      <h3>Product Sale</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="feature_box purple">
+                    <div class="feature_icon">
+                      <img src="./images/icon/ticket_icon.svg">
+                    </div>
+                    <div class="feature_content">
+                      <span>32</span>
+                      <h3>Event Ticket Sale</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="feature_box blue">
+                    <div class="feature_icon">
+                      <img src="./images/icon/doller_icon.svg">
+                    </div>
+                    <div class="feature_content">
+                      <span>$2160.00</span>
+                      <h3>Total Revenue</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="reminder">
+              <div class="row">
+                <div class="col-lg-8">
+                  <div class="feature_box clander_feature_box d-block">
+                    <div class="calendar_title">
+                      <h3>Reminders</h3> <span>To add reminder click on calender</span>
+                    </div>
+                    <!-- <div id='calendar' class="calendar_div"></div> -->
+                    <div id="calendar"></div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="feature_box alert_div mb-20">
+                    <div class="feature_content">
+                      <h3><img src="./images/icon/alert_icon.svg"> Alert</h3>
+                      <p>Your membership subscription expire on January 23, 2024</p>
+                      <div class="search_btn testi_btn  learn_btn">
+                        <a href="#">Renew</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="feature_box alert_div dark_blue">
+                    <div class="feature_content">
+                      <h3><img src="./images/icon/alert_icon.svg"> Alert</h3>
+                      <p>Product 'Men's T-shirt Elite' stock is low</p>
+                      <div class="search_btn testi_btn  learn_btn">
+                        <a href="#">Update</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row recent_sales_documents">
+              <div class="col-lg-6">
+                <div class="feature_box d-block">
+                  <div class="feature_header">
+                    <h3>Recent Sales</h3>
+                  </div>
+                  <div class="feature_content">
+                    <div class="notification">
+                      <div class="status"><span class="bordered">Membership</span> <span class="time">2 hours ago</span>
+                      </div>
+                      <a href="#" class="link">Amanda Joseph subscribed 'Premium Package' Family membership plan</a>
+                    </div>
+                    <div class="notification">
+                      <div class="status"><span class="bordered">Events</span> <span class="time">2 hours ago</span>
+                      </div>
+                      <a href="#" class="link">Amanda Joseph subscribed 'Premium Package' Family membership plan</a>
+                    </div>
+                    <div class="notification">
+                      <div class="status"><span class="bordered">Faciilty</span> <span class="time">2 hours ago</span>
+                      </div>
+                      <a href="#" class="link">Amanda Joseph subscribed 'Premium Package' Family membership plan</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="feature_box d-block">
+                  <div class="feature_header">
+                    <h3>My Documents</h3>
+                  </div>
+                  <div class="feature_content">
+                    <div class="notification documents">
+                      <div class="notification_content">
+                        <p>Company Policies</p>
+                        <span>Updated on Aug 23, 2023</span>
+                      </div>
+                      <div class="button_div">
+                        <a href="#" class="btn btn-border gray-border hover_orange_border">View</a>
+                        <a href="#" class="btn btn-orange">Update</a>
+                      </div>
+                    </div>
+                    <div class="notification documents">
+                      <div class="notification_content">
+                        <p>Company Policies</p>
+                        <span>Updated on Aug 23, 2023</span>
+                      </div>
+                      <div class="button_div">
+                        <a href="#" class="btn btn-border gray-border hover_orange_border">View</a>
+                        <a href="#" class="btn btn-orange">Update</a>
+                      </div>
+                    </div>
+                    <div class="notification documents">
+                      <div class="notification_content">
+                        <p>Company Policies</p>
+                        <span>Updated on Aug 23, 2023</span>
+                      </div>
+                      <div class="button_div">
+                        <a href="#" class="btn btn-border gray-border hover_orange_border">View</a>
+                        <a href="#" class="btn btn-orange ">Update</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Dashboard Inner Content Section End -->
+
+  <div class="footer jb_cover">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-sm-6 col-12">
+          <div class="footerNav jb_cover">
+            <h5>clubland</h5>
+            <ul class="footer_first_contact">
+              <li><i class="flaticon-telephone"></i>
+                <p>1 -234 -456 -7890 <br>
+                  1 -234 -456 -7890</p>
+              </li>
+              <li><i class="flaticon-envelope"></i> <a href="#">info@clubland.com.au </a> <br>
+                <a href="#">support@clubland.com.au</a>
+              </li>
+            </ul>
+            <ul class="icon_list_news jb_cover">
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li> <a href="#"><i class="fab fa-twitter"></i> </a> </li>
+              <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+              <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-12">
+          <div class="footerNav jb_cover footer_border_displ">
+            <h5>businesses</h5>
+            <ul class="nav-widget">
+              <li><a href="#"><i class="fa fa-square"></i>Products </a></li>
+              <li><a href="#"><i class="fa fa-square"></i>Events </a></li>
+              <li><a href="#"><i class="fa fa-square"></i>Facility </a></li>
+              <li><a href="#"><i class="fa fa-square"></i>Pricing </a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-12">
+          <div class="footerNav jb_cover footer_border_displ">
+            <h5>about</h5>
+            <ul class="nav-widget">
+              <li><a href="#"><i class="fa fa-square"></i>About us</a></li>
+              <li><a href="#"><i class="fa fa-square"></i>Our Core Values</a></li>
+              <li><a href="#"><i class="fa fa-square"></i>Our Customers</a></li>
+              <li><a href="#"><i class="fa fa-square"></i>Privacy Policy</a></li>
+              <li><a href="#"><i class="fa fa-square"></i>Terms & Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-12">
+          <div class="footerNav jb_cover footer_border_displ">
+            <h5>contact</h5>
+            <ul class="nav-widget">
+              <li> <a href="#"><i class="fa fa-square"></i>Contact </a> </li>
+              <li> <a href="#"><i class="fa fa-square"></i>Email </a> </li>
+              <li> <a href="#"><i class="fa fa-square"></i>Help Center </a> </li>
+              <li> <a href="#"><i class="fa fa-square"></i>Locations</a> </li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright_left"><i class="fa fa-copyright"></i> 2024 Clubland | All Rights Reserved. Design by
+          Supportsoft. </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+    <div class="waveWrapper waveAnimation">
+      <div class="waveWrapperInner bgTop gradient-color">
+        <div class="wave waveTop"></div>
+      </div>
+      <div class="waveWrapperInner bgMiddle">
+        <div class="wave waveMiddle"></div>
+      </div>
+      <div class="waveWrapperInner bgBottom">
+        <div class="wave waveBottom"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- calendar modal -->
+  <div id="modal-view-event" class="modal modal-top fade calendar-modal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <h4 class="modal-title"><span class="event-icon"></span><span class="event-title"></span></h4>
+          <div class="event-body"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-view-event-add" class="modal modal-top fade calendar-modal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <form id="add-event">
+          <div class="modal-body">
+            <h4>Add Event Detail</h4>
+            <div class="form-group">
+              <label>Event name</label>
+              <input type="text" class="form-control" name="ename">
+            </div>
+            <div class="form-group">
+              <label>Event Date</label>
+              <input type='text' class="datetimepicker form-control" name="edate">
+            </div>
+            <div class="form-group">
+              <label>Event Description</label>
+              <textarea class="form-control" name="edesc"></textarea>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">Save</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- <script src="js/jquery-3.3.1.min.js"></script>  -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+  
+  
+  <!-- <script src="js/popper.min.js"></script> -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/modernizr.js"></script>
+  <script src="js/jquery.menu-aim.js"></script>
+  <script src="js/owl.carousel.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/jquery.inview.min.js"></script>
+  <script src="js/jquery.nice-select.min.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
+  <script src="js/custom.js"></script>
+
+
+  
+
+
+  <script src='js/moment.js'></script>
+  <script src='js/fullcalendar.min.js'></script>
+  <script src='js/datepicker.js'></script>
+  <script src='js/datepicker.en.js'></script>
+
+  <script>
+    
+
+    jQuery(document).ready(function () {
+      jQuery('.datetimepicker').datepicker({
+        timepicker: true,
+        language: 'en',
+        range: true,
+        multipleDates: true,
+        multipleDatesSeparator: " - "
+      });
+      jQuery("#add-event").submit(function () {
+        alert("Submitted");
+        var values = {};
+        $.each($('#add-event').serializeArray(), function (i, field) {
+          values[field.name] = field.value;
+        });
+        console.log(
+          values
+        );
+      });
+    });
+
+    (function () {
+      'use strict';
+      // ------------------------------------------------------- //
+      // Calendar
+      // ------------------------------------------------------ //
+      jQuery(function () {
+        // page is ready
+        jQuery('#calendar').fullCalendar({
+          themeSystem: 'bootstrap4',
+          // emphasizes business hours
+          businessHours: false,
+          defaultView: 'month',
+          // event dragging & resizing
+          editable: true,
+          // header
+          header: {
+            left: 'month,agendaWeek,',
+            right: 'prev,next'
+          },
+          events: [
+            {
+              title: 'Barber',
+              description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu pellentesque nibh. In nisl nulla, convallis ac nulla eget, pellentesque pellentesque magna.',
+              start: '2023-05-05',
+              end: '2023-05-05',
+              className: 'fc-bg-default',
+              icon: "circle"
+            },
+            {
+              title: 'Flight Paris',
+              description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu pellentesque nibh. In nisl nulla, convallis ac nulla eget, pellentesque pellentesque magna.',
+              start: '2023-08-08T14:00:00',
+              end: '2023-08-08T20:00:00',
+              className: 'fc-bg-deepskyblue',
+              icon: "cog",
+              allDay: false
+            },
+            {
+              title: 'Team Meeting',
+              description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu pellentesque nibh. In nisl nulla, convallis ac nulla eget, pellentesque pellentesque magna.',
+              start: '2023-07-10T13:00:00',
+              end: '2023-07-10T16:00:00',
+              className: 'fc-bg-pinkred',
+              icon: "group",
+              allDay: false
+            },
+            {
+              title: 'Meeting',
+              description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu pellentesque nibh. In nisl nulla, convallis ac nulla eget, pellentesque pellentesque magna.',
+              start: '2023-08-12',
+              className: 'fc-bg-lightgreen',
+              icon: "suitcase"
+            },
+            {
+              title: 'Conference',
+              description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu pellentesque nibh. In nisl nulla, convallis ac nulla eget, pellentesque pellentesque magna.',
+              start: '2023-08-13',
+              end: '2023-08-15',
+              className: 'fc-bg-blue',
+              icon: "calendar"
+            },
+            {
+              title: 'Baby Shower',
+              description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu pellentesque nibh. In nisl nulla, convallis ac nulla eget, pellentesque pellentesque magna.',
+              start: '2023-08-13',
+              end: '2023-08-14',
+              className: 'fc-bg-default',
+              icon: "child"
+            },
+            {
+              title: 'Birthday',
+              description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu pellentesque nibh. In nisl nulla, convallis ac nulla eget, pellentesque pellentesque magna.',
+              start: '2023-09-13',
+              end: '2023-09-14',
+              className: 'fc-bg-default',
+              icon: "birthday-cake"
+            },
+            {
+              title: 'Lorem ipsum dolor',
+              description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu pellentesque nibh. In nisl nulla, convallis ac nulla eget, pellentesque pellentesque magna.',
+              start: '2023-10-15T09:30:00',
+              end: '2023-10-15T11:45:00',
+              className: 'fc-bg-default',
+              icon: "glass",
+              allDay: false
+            },
+            {
+              title: 'Dinner',
+              description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu pellentesque nibh. In nisl nulla, convallis ac nulla eget, pellentesque pellentesque magna.',
+              start: '2023-11-15T20:00:00',
+              end: '2023-11-15T22:30:00',
+              className: 'fc-bg-default',
+              icon: "cutlery",
+              allDay: false
+            },
+            {
+              title: 'Shooting',
+              description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu pellentesque nibh. In nisl nulla, convallis ac nulla eget, pellentesque pellentesque magna.',
+              start: '2023-08-25',
+              end: '2023-08-25',
+              className: 'fc-bg-blue',
+              icon: "camera"
+            },
+            {
+              title: 'Go Space :)',
+              description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu pellentesque nibh. In nisl nulla, convallis ac nulla eget, pellentesque pellentesque magna.',
+              start: '2023-12-27',
+              end: '2023-12-27',
+              className: 'fc-bg-default',
+              icon: "rocket"
+            },
+            {
+              title: 'Dentist',
+              description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu pellentesque nibh. In nisl nulla, convallis ac nulla eget, pellentesque pellentesque magna.',
+              start: '2023-12-29T11:30:00',
+              end: '2023-12-29T012:30:00',
+              className: 'fc-bg-blue',
+              icon: "medkit",
+              allDay: false
+            }
+          ],
+          eventRender: function (event, element) {
+            if (event.icon) {
+              element.find(".fc-title").prepend("<i class='fa fa-" + event.icon + "'></i>");
+            }
+          },
+          dayClick: function () {
+            jQuery('#modal-view-event-add').modal();
+          },
+          eventClick: function (event, jsEvent, view) {
+            jQuery('.event-icon').html("<i class='fa fa-" + event.icon + "'></i>");
+            jQuery('.event-title').html(event.title);
+            jQuery('.event-body').html(event.description);
+            jQuery('.eventUrl').attr('href', event.url);
+            jQuery('#modal-view-event').modal();
+          },
+        })
+      });
+
+    })(jQuery);
+  </script>
+</body>
+
+</html>
