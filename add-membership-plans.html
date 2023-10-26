@@ -109,17 +109,21 @@
             <li><a href="#" class="gc_main_navigation">About</a></li>
             <li> <a href="#" class="gc_main_navigation"> Pricing</a></li>
             <li><a href="#" class="gc_main_navigation">How it works</a></li>
-            <li><a href="#" class="notification_nav">
+            <li><a href="#" class="notification_nav" role="button" data-toggle="dropdown" aria-expanded="false">
               <span class="notification_count">2</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="23.217" height="27.063" viewBox="0 0 23.217 27.063">
-              <path id="notifcations" d="M86.564,50.685l-.3-.358c-1.329-1.607-2.133-2.578-2.133-7.128a9.229,9.229,0,0,0-1.675-5.739,7.882,7.882,0,0,0-3.386-2.484.181.181,0,0,1-.05-.04,3.653,3.653,0,0,0-7.163,0,.189.189,0,0,1-.049.039c-3.406,1.4-5.061,4.092-5.061,8.224,0,4.552-.8,5.523-2.133,7.128-.1.117-.2.235-.3.358a2.124,2.124,0,0,0-.281,2.273,2.258,2.258,0,0,0,2.074,1.273h18.66a2.254,2.254,0,0,0,2.065-1.269A2.125,2.125,0,0,0,86.564,50.685Zm-11.12,8.378A4.836,4.836,0,0,0,79.7,56.518a.242.242,0,0,0-.214-.355H71.4a.242.242,0,0,0-.214.355A4.836,4.836,0,0,0,75.444,59.063Z" transform="translate(-63.835 -32)" fill="#d97333"/>
-            </svg>
-            </a></li>
+              <i class="icon-bell"></i>
+            </a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+            </li>
           </ul>
         </div>
       </div>
       <div class="user_profile">
-        <spna  class="d-flex link-body-emphasis text-decoration-none" href="#" role="button" data-toggle="dropdown" aria-expanded="false" >
+        <spna  class="d-flex link-body-emphasis text-decoration-none" role="button" data-toggle="dropdown" aria-expanded="false" >
           <img src="./images/user-img.png" alt="mdo" width="50" height="50" class="rounded-circle">
           <div class="user-content text-start">
           <span>Anthony Smith</span>
@@ -136,7 +140,7 @@
   </div>
 
   <!-- Title Section Start -->
-  <div class="page_title_section">
+  <div class="page_title_section dashbord_title">
     <div class="page_header">
       <div class="container">
         <div class="row">
@@ -161,7 +165,7 @@
   <section class="dashboard_inner_content">
     <div class="container">
       <div class="row">
-        <div class="col-lg-3">
+        <div class="col-xl-3 col-lg-4 ">
           <div class="left_menu" id="left_menu">
             <div class="close_menu" id="close-icon"><i class="uil uil-times"></i></div>
             <div class="feature_box text-center border-bottom-0">
@@ -235,7 +239,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-9">
+        <div class="col-xl-9 col-lg-8">
           <div class="right_menu">
             <div class="feature_box d-block add_membership_plan">
                 <div class="title_div d-flex align-items-center justify-content-between mb-20">
@@ -243,26 +247,27 @@
                       <h2 class="border_bottom">Existing Plans</h2>
                     </div>
                     <div class="add_new">
-                      <div class="button_div"><a class="btn mr-1" href="#"><img src="./images/icon/membership_add_new.svg" alt="icon"> Add New Plan</a></div>
+                      <div class="button_div"><a class="btn mr-1" href="#"><i class="icon-membership"></i> View Plans</a></div>
                     </div>
                 </div>
                 <form class="dashboard_form" >
-                  <div class="form-group comments_form">
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <label>Membership Type</label>
-                        <div class="play_type">
-                          <span>Individual</span>
-                          <span>Individual</span>
-                        </div>
-                      </div>
-                      <div class="col-lg-8">
-                        <label>Membership Type</label>
-                        <div class="comments_form">
-                          <select class="form-control form-select" aria-label="Default select example">
-                            <option selected>This Week</option>
-                            <option value="1">This Month</option>
-                            <option value="2">This Year</option>
+                  <div class="form-group comments_form membership-type">
+                    <label>Membership Type</label>
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" checked id="plan_type_individual" name="membership-type" class="custom-control-input">
+                      <label class="custom-control-label" for="plan_type_individual">Individual</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" id="plan_type_family" name="membership-type" class="custom-control-input">
+                      <label class="custom-control-label" for="plan_type_family">Family</label>
+                      <div class="maximum-people">
+                        <label>Maximum People Allowed</label>
+                        <div class="comments_form mb-0">
+                          <select class="form-control form-select small" aria-label="Default select example">
+                            <option selected>Upto 2 people</option>
+                            <option value="1">Upto 3 people</option>
+                            <option value="2">Upto 4 people</option>
+                            <option value="2">Upto 5 people</option>
                           </select>
                         </div>
                       </div>
@@ -272,73 +277,108 @@
                     <div class="row">
                       <div class="col-lg-6">
                         <label>Plan Name</label>
-                        <input type="text" class="form-control require" placeholder="Eg.: Silver Plan">
+                        <input type="text" class="form-control" placeholder="Eg.: Silver Plan">
                       </div>
-                      <div class="col-lg-6">
+                      <div class="col-lg-6 mt-2 mt-lg-0">
                         <div class="row">
                           <div class="col-6">
                             <label>Price (In AUD)</label>
-                            <input type="number" class="form-control require" placeholder="Eg.: $49.99">
+                            <input type="number" class="form-control" placeholder="Eg.: $49.99">
                           </div>
                           <div class="col-6">
                             <label>Discount (In %)</label>
-                            <input type="number" class="form-control require" placeholder="Eg.: 20%">
+                            <input type="number" class="form-control" placeholder="Eg.: 20%">
                           </div>
                         </div>
                       </div>
+                    </div>
+                  </div>
+                  <div class="form-group comments_form terms-of-plan">
+                    <label>Terms of Plan</label>
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" id="plan_terms_monthly" checked name="plan_terms" class="custom-control-input">
+                      <label class="custom-control-label" for="plan_terms_monthly">Monthly</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" id="plan_terms_quarterly" name="plan_terms" class="custom-control-input">
+                      <label class="custom-control-label" for="plan_terms_quarterly">Quarterly</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" id="plan_terms_half_yearly" name="plan_terms" class="custom-control-input">
+                      <label class="custom-control-label" for="plan_terms_half_yearly">Half Yearly</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" id="plan_terms_annually" name="plan_terms" class="custom-control-input">
+                      <label class="custom-control-label" for="plan_terms_annually">Annually</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" id="plan_terms_custom" name="plan_terms" class="custom-control-input">
+                      <label class="custom-control-label" for="plan_terms_custom"><span>custom</span></label>
+                      <input type="text" class="custom_input form-control" placeholder="Eg.: 4 months">
                     </div>
                   </div>
                   <div class="form-group comments_form">
                     <label>Plan Summary</label>
-                    <input type="text" class="form-control require" placeholder="Max 40 words">
+                    <input type="text" class="form-control" placeholder="Max 40 words">
                   </div>
-                  <div class="form-group comments_form">
+                  <div class="form-group comments_form benefits_group">
                     <label>Benefits</label>
-                    <input type="text" class="form-control require" placeholder="Add benefits 1">
-                    <div class="icon_div">+</div>
+                    <input type="text" class="form-control" placeholder="Add benefits 1">
+                    <div class="added_benefit">
+                      <input type="text" class="form-control" placeholder="Add benefits 2">
+                      <div class="icon_div bg-red"><i class="icon-close"></i></div>
+                    </div>
+                    <div class="add_more_benefit">
+                      <input type="text" class="form-control" placeholder="Add benefits 3">
+                      <div class="icon_div bg-gray"><i class="icon-plus"></i></div>
+                    </div>
                   </div>
                   <div class="form-group comments_form">
                     <label>Terms & Conditions</label>
-                    <textarea class="form-control require" placeholder="Enter Terms nd Conditions"></textarea>
+                    <textarea class="form-control" placeholder="Enter Terms nd Conditions"></textarea>
                   </div>
-                  <div class="form-group comments_form">
-                    <div class="added_div">
-                      <input type="text" class="form-control require" placeholder="Extra Field Data">
-                      <div class="icon_div">+</div>
+                  <div class="extra_field">
+                    <div class="added_div form-group comments_form ">
+                      <input type="text" class="form-control" placeholder="Extra Field Data">
+                      <div class="icon_div bg-red"><i class="icon-close"></i></div>
                     </div>
                     <div class="row">
                       <div class="col-lg-6">
                         <label>Add Another Field</label>
-                        <div class="comments_form">
-                          <select class="form-control form-select" aria-label="Default select example">
+                        <div class=" form-group comments_form mb-0">
+                          <select class="form-control form-select w-100" aria-label="Default select example">
                             <option selected>Select field type</option>
-                            <option value="1">This Month</option>
-                            <option value="2">This Year</option>
+                            <option value="1">Input</option>
+                            <option value="1">Radio Button</option>
+                            <option value="1">Check Box</option>
                           </select>
                         </div>
                       </div>
-                      <div class="col-lg-6">
+                      <div class="col-lg-6 mt-2 mt-lg-0">
                         <div class="form-group comments_form">
                           <label>Field Label</label>
-                          <input type="text" class="form-control require" placeholder="Eg.: GST in %">
+                          <input type="text" class="form-control" placeholder="Eg.: GST in %">
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col-6">
-                      <div class="form-group comments_form">
+                  <div class="row align-items-center ">
+                    <div class="col-12 col-sm-6">
+                      <div class="form-group mb-0 comments_form auto-reneval">
                         <button type="button" class="btn btn-toggle-switch" data-toggle="button" aria-pressed="false" autocomplete="off">
                           <div class="handle"></div>
                         </button>
-                        <label class="ml-2">Auto Reneval</label>
+                        <label class="ml-2 mb-0 ">Auto Reneval</label>
                       </div>
                     </div>
-                    <div class="col-6 d-flex justify-content-end">
-                      <div class="button_div"><button type="submit" class="btn">Publish Plan</button></div>
+                    <div class="col-12 col-sm-6 d-flex justify-content-sm-end  justify-content-start mt-30 mt-sm-0">
+                      <div class="button_div"><button type="submit" class="btn btn-50">Publish Plan</button></div>
                     </div>
                   </div>
                 </form>
+
+	              <!-- <div id="extend-field"></div>
+                <button id="extend">Add</button> -->
             </div>
           </div>
         </div>

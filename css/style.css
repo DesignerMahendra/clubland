@@ -506,7 +506,7 @@ a:hover {
 .mainmenu ul li {
     display: inline-block;
 }
-.mainmenu ul li a {
+.mainmenu ul li > a {
     color: #222;
     display: block;
     

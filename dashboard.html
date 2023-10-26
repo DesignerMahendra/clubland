@@ -15,9 +15,9 @@
 
   <link rel="stylesheet" type="text/css" href="css/fullcalendar.css" />
   <link rel="stylesheet" type="text/css" href="css/icons.css" />
+  <link rel="stylesheet" type="text/css" href="./fonts/icon/icon.css" />
   <link rel="stylesheet" type="text/css" href="css/animate.css" />
-  <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" /> -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="css/fonts.css" />
   <link rel="stylesheet" type="text/css" href="css/flaticon.css" />
   <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
@@ -56,7 +56,7 @@
       <li><a href="login.html">Login</a></li>
     </ul>
   </nav>
-  <div class="cp_navi_main_wrapper jb_cover">
+  <div class="cp_navi_main_wrapper jb_cover dashboard_header">
     <div class="container-fluid">
       <div class="cp_logo_wrapper"> <a href="index.html"> <img src="images/logo.png" alt="logo"> </a> </div>
       <header class="mobail_menu d-block d-sm-block d-md-block d-lg-none d-xl-none">
@@ -107,33 +107,42 @@
             <li><a href="#" class="gc_main_navigation">About</a></li>
             <li> <a href="#" class="gc_main_navigation"> Pricing</a></li>
             <li><a href="#" class="gc_main_navigation">How it works</a></li>
-            <li><a href="#" class="notification_nav">
+            <li><a href="#" class="notification_nav" role="button" data-toggle="dropdown" aria-expanded="false">
               <span class="notification_count">2</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="23.217" height="27.063" viewBox="0 0 23.217 27.063">
-              <path id="notifcations" d="M86.564,50.685l-.3-.358c-1.329-1.607-2.133-2.578-2.133-7.128a9.229,9.229,0,0,0-1.675-5.739,7.882,7.882,0,0,0-3.386-2.484.181.181,0,0,1-.05-.04,3.653,3.653,0,0,0-7.163,0,.189.189,0,0,1-.049.039c-3.406,1.4-5.061,4.092-5.061,8.224,0,4.552-.8,5.523-2.133,7.128-.1.117-.2.235-.3.358a2.124,2.124,0,0,0-.281,2.273,2.258,2.258,0,0,0,2.074,1.273h18.66a2.254,2.254,0,0,0,2.065-1.269A2.125,2.125,0,0,0,86.564,50.685Zm-11.12,8.378A4.836,4.836,0,0,0,79.7,56.518a.242.242,0,0,0-.214-.355H71.4a.242.242,0,0,0-.214.355A4.836,4.836,0,0,0,75.444,59.063Z" transform="translate(-63.835 -32)" fill="#d97333"/>
-            </svg>
-            </a></li>
+              <i class="icon-bell"></i>
+            </a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+            </li>
           </ul>
         </div>
       </div>
-      <div class=" user_profile">
-        <spna href="#" class="d-flex link-body-emphasis text-decoration-none"  >
+      <div class="user_profile">
+        <spna  class="d-flex link-body-emphasis text-decoration-none" role="button" data-toggle="dropdown" aria-expanded="false" >
           <img src="./images/user-img.png" alt="mdo" width="50" height="50" class="rounded-circle">
           <div class="user-content text-start">
           <span>Anthony Smith</span>
           <p class="mb-0">Company Name</p>
           </div>
         </span>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+        </div>
       </div>
     </div>
   </div>
 
   <!-- Title Section Start -->
-  <div class="page_title_section">
+  <div class="page_title_section dashbord_title">
     <div class="page_header">
       <div class="container">
         <div class="row">
-          <div class="col-lg-9 col-md-8 col-12 col-sm-7">
+          <div class="col-lg-9 col-md-8 col-12 col-sm-7 align-items-center d-flex">
             <div class="left_menu_icon" id="left_menu_icon"></div>
             <h1>Dashboard</h1>
           </div>
@@ -170,17 +179,17 @@
             </div>
             <div class="feature_box pt-0">
               <ul class="menu-list" id="drop_menu">
-                <li><a class="link" href="#"><i class="fas fa-tachometer-alt"></i></i> Dashboard</a></li>
-                <li><a class="link" href="#"><i class="fas fa-edit"></i> Profile</a></li>
+                <li><a class="link" href="./dashboard.html"><i class="icon-dashboard"></i> Dashboard</a></li>
+                <li><a class="link" href="#"><i class="icon-profile"></i> Profile</a></li>
                 <li class="dropdown">
-                  <span class="link drop_link"><i class="fas fa-suitcase"></i> Memberships</span>
+                  <span class="link drop_link"><i class="icon-membership"></i></i> Memberships</span>
                   <ul class="submenu dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Membership Plans</a></li>
+                    <li><a class="dropdown-item" href="./membership-plans.html">Membership Plans</a></li>
                     <li><a class="dropdown-item" href="#">Members</a></li>
                   </ul>
                 </li>
                 <li class="dropdown">
-                  <span class="link drop_link"><i class="fas fa-tag"></i> Events</span>
+                  <span class="link drop_link"><i class="icon-events"></i> Events</span>
                   <ul class="submenu dropdown-menu" aria-labelledby="dropdownMenuLink">
                     <li><a class="dropdown-item" href="#">Add New Event</a></li>
                     <li><a class="dropdown-item" href="#">All Events</a></li>
@@ -188,14 +197,14 @@
                 </li>
                 <li class="dropdown">
 
-                  <span class="link drop_link"><i class="fas fa-envelope"></i> Club/Shop</span>
+                  <span class="link drop_link"><i class="icon-shop"></i> Club/Shop</span>
                   <ul class="submenu dropdown-menu" aria-labelledby="dropdownMenuLink">
                     <li><a class="dropdown-item" href="#">Add New Club</a></li>
                     <li><a class="dropdown-item" href="#">All Club</a></li>
                   </ul>
                 </li>
                 <li class="dropdown">
-                  <span class="link drop_link"><i class="fas fa-city"></i> Facility</span>
+                  <span class="link drop_link"><i class="icon-facility"></i> Facility</span>
                   <ul class="submenu dropdown-menu" aria-labelledby="dropdownMenuLink">
                     <li><a class="dropdown-item" href="#">All Facility</a></li>
                   </ul>
@@ -209,21 +218,21 @@
                 </ul>
               </li> -->
                 <li class="dropdown">
-                  <span class="link drop_link"><i class="fas fa-globe"></i> Web Pages</span>
+                  <span class="link drop_link"><i class="icon-file"></i> Web Pages</span>
                   <ul class="submenu dropdown-menu" aria-labelledby="dropdownMenuLink">
                     <li><a class="dropdown-item" href="#">Home</a></li>
                     <li><a class="dropdown-item" href="#">About us</a></li>
                     <li><a class="dropdown-item" href="#">Pricing</a></li>
                   </ul>
                 </li>
-                <li><a class="link" href="#"><i class="fas fa-building"></i> Company Preview</a></li>
+                <li><a class="link" href="#"><i class="icon-company"></i> Company Preview</a></li>
               </ul>
             </div>
             <div class="feature_box border-bottom-0">
               <ul class="menu-list">
-                <li><a href="#"><i class="fas fa-key"></i> Change Password</a></li>
-                <li><a href="#"><i class="fas fa-power-off"></i> Log out</a></li>
-                <li><a href="#"><i class="fas fa-trash-alt"></i> Delete Account</a></li>
+                <li><a href="#"><i class="icon-key"></i> Change Password</a></li>
+                <li><a href="#"><i class="icon-power-off"></i> Log out</a></li>
+                <li><a href="#"><i class="icon-delete"></i> Delete Account</a></li>
               </ul>
             </div>
           </div>
